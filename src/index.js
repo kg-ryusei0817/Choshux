@@ -1,6 +1,6 @@
 ﻿export default {
   async fetch(request, env, ctx) {
-    const html = <!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     <p>Connected to GitHub & Cloudflare Workers.</p>
   </div>
 </body>
-</html>;
+</html>`;
 
     return new Response(html, {
       headers: { "Content-Type": "text/html;charset=UTF-8" }
